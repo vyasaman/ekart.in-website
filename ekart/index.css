@@ -1,0 +1,47 @@
+.logo{
+    position: absolute;
+    left: 25em;
+    top: 17em;
+}
+body{
+    background-color: rgb(252, 247, 222);
+}
+#slider{
+    margin-left: 2em;
+    width: 90em;
+}
+.Deal-of-day{
+    border-radius: 1em;
+}
+#moto-1{
+    position: absolute;
+    top: 10em;
+    left: 3em;
+    font-size: 5em;
+    color: white;
+    font-style:italic;
+    font-weight:800;
+    font-family:Lucida Handwriting;
+}
+#moto-2{
+    position: absolute;
+    top: 12em;
+    left: 5em;
+    font-size: 5em;
+    color: white;
+    font-style:italic;
+    font-weight:800;
+    font-family:Lucida Handwriting;
+}
+.d-o-t-d:hover{
+    transition: 0.2s ease-out;
+    transform: scale(1.1);
+}
+#login_form{
+ border-radius: 1em;
+ background-color: rgb(252, 247, 222);
+}
+#Reg_form{
+    border-radius: 1em;
+    background-color: rgb(252, 247, 222); 
+}

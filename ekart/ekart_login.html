@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3324f4b2ff.js" crossorigin="anonymous"></script>
+    <script src="ekart.js"></script>
+    <style>
+        #h {
+            margin-left: 8em;
+        }
+
+        #fb {
+            margin-left: 6em;
+        }
+
+        #gmail {
+            margin-left: 9em;
+        }
+
+        #fb:hover {
+            transition: ease-out 0.2s;
+            transform: scale(1.2);
+        }
+
+        #gmail:hover {
+            transition: ease-out 0.2s;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body class="col-md-12 bg-white">
+    <div class="row ">
+        <img src="images/BackGround.jpg" height="450" width="1343" alt="">
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+        <nav class="bg-warning navbar navbar-expand-sm col-md-12">
+            <ul class="navbar-nav col-md-8">
+                <li class="nav-item col-md-2"><a href="index.html" class="nav-link text-white btn btn-dark">Home </a>
+                </li>
+                <li class="nav-item col-md-2"><a href="#" class="nav-link text-white btn btn-dark">About
+                    </a>
+                </li>
+                <li class="nav-item col-md-2"><a href="ekart_login.html"
+                        class="nav-link text-white btn btn-dark active">Login </a>
+                </li>
+                <li class="nav-item col-md-2"><a href="#" class="nav-link text-white btn btn-dark">Contact </a>
+                </li>
+            </ul>
+            <form action="#" class="form-inline col-md-4">
+                <input class="form-control mr-sm-2 col-md-8 " id="search" type="text" placeholder="search">
+                <button class="btn btn-dark col-md-2" type="submit"> Search</button>
+            </form>
+        </nav>
+    </div>
+    <p><br></p>
+    <div class="col-md-12 ">
+        <div class="col-md-6 border container" id="login_form">
+
+            <form action="" class="form-group border-bottom border-secondary">
+                <h1 class="text-center text-dark display-3 font-weight-bold">LOGIN</h1>
+                <p><br></p>
+                <input type="text" required name="user-name" id="user_name" class="form-control col-md-11"
+                    placeholder="Email or UserName">
+                <label for=""><br></label>
+                <input type="password" required name="pass" id="pass" class="form-control col-md-11"
+                    placeholder="Password">
+                <button onclick="show()" class="btn col-md-1" style="position: absolute; top: 12.7em; left: 36em;">
+                    <img src="images/show.png" id="sh_image" height="30" alt="">
+                </button>
+                <label for=""><br><br></label>
+                <button class="col-md-4 btn btn-primary font-weight-bold" onclick="login()">Login</button>
+                <button href="#Reg_form" data-target="#Reg_form" class="col-md-5 btn btn-success">Create
+                    an Account</button>
+                <p><a href="#" target="blank" class="container">Forget password?</a></p>
+
+            </form>
+
+            <div class="row col-md-12">
+
+                <form action="" class="form-group">
+                    <h3 class="text-muted " id="h">Login Using <br><br><br></h3>
+                    <a href="fb.html" class="col-md-2"><img src="images/fb.png" id="fb" height="90" alt=""></a>
+                    <a href="https://www.gmail.com" class="col-md-2"><img src="images/gmail.png" height="90" id="gmail"
+                            alt=""></a>
+                </form>
+            </div>
+        </div>
+        <p></p>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6 border container" id="Reg_form">
+            <form action="" class="form-group">
+                <div class="row">
+                    <p><br><br></p>
+                    <h1 class="text-center text-dark display-3 font-weight-bold">Create An Account</h1>
+
+                </div>
+                <div class="row">
+                    <p><br><br></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 container"><input type="text" name="fName" id="" class="form-control"
+                            placeholder="Enter First Name" required>
+                    </div>
+                    <div class="col-md-6 container">
+                        <input type="text" name="sName" id="" required class="form-control"
+                            placeholder="Enter Last Name">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <input type="email" required name="email" class="form-control" placeholder="Enter Email Address"
+                            id="">
+                        <p></p>
+                    </div>
+                    <div class="container">
+                        <input type="text" required pattern="[0-9]{10}" placeholder="Enter Contact Number"
+                            class="form-control">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 container">
+                        <input type="password" required name="pass" placeholder="Create Password" class="form-control"
+                            id="pass1">
+                        <p></p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" required name="cnf_pass" placeholder="Confirm Your Password"
+                            class="form-control" id="pass2">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="container">
+                        <input type="text" required class="form-control" placeholder="House/Flat/Street no.">
+                        <p></p>
+                    </div>
+                    <div class="container">
+                        <input type="text" class="form-control" placeholder="Address Line-2">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="form-group container">
+                        <div class="container">
+                            <input type="checkbox" required class="form-check-input" id="check"> <label
+                                class="form-check-label" for="#check">I Have Read the
+                                Terms and Conditions.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <button class="btn btn-success col-md-4" onclick="reg()">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p><br><br></p>
+    <div class="row  bg-dark footer">
+        <div class="col-md-3">
+            <div class="row container-fluid">
+                <label class="display-4 text-light font-weight-bold">ekart.in</label>
+            </div>
+            <div class="row container-fluid font-weight-bold text-light">
+                272-C, G.C.Avenue, Pne, India
+            </div>
+            <div class="row container-fluid" style="margin-top: 2em;">
+                <a href="#"><img src="images/fb.png" height="30" alt=""></a>
+                <a href="#"><img src="images/insta.png" height="30" alt="" style="margin-left: 4em;"></a>
+                <a href="#"><img src="images/gmail.png" height="30" alt="" style="margin-left: 4.5em;"></a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <h2 class=" text-white">Information</h2>
+            <div class="container-fluid">
+
+                <div class="row">
+                    <a href="" class="text-white">Site Map</a>
+                </div>
+                <div class="row">
+                    <a href="" class="text-white">Bank Details</a>
+                </div>
+                <div class="row">
+                    <a href="" class="text-white">Shipping Facility</a>
+                </div>
+                <div class="row">
+                    <a href="" class="text-white">Cancellation & Refund</a>
+                </div>
+                <div class="row">
+                    <a href="" class="text-white">Payment Method</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h2 class="text-white">Customer Service</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="#" class="text-white">My Account</a>
+                </div>
+                <div class="row">
+                    <a href="#" class="text-white">My Orders</a>
+                </div>
+                <div class="row">
+                    <a href="#" class="text-white">Returns</a>
+                </div>
+                <div class="row">
+                    <a href="#" class="text-white">Gift Cards</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-white text-center">NEWSTELLER</h2>
+            <div class="row">
+                <p class="text-white">Stay up to date with news and promotions by signing up for our newsletter</p>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Enter Your Email adderess" class="form-control">
+            </div>
+            <div class="row container">
+                <input type="checkbox" class="form-check-input" id="ch"><label for="#ch" class="text-danger">I
+                    have read
+                    and agree to
+                    the <a href="">Privacy Policy</a><br></label>
+            </div>
+            <div class="row">
+                <button class="btn btn-warning">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
