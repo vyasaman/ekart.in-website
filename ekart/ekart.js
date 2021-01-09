@@ -6,7 +6,7 @@ function login() {
     }
     else if (email == "amanvyas720@gmail.com" && pass == "12345") {
 
-        window.location = "index.html";
+        window.location = "ekart_index.html";
     }
     else {
         alert("Invalid Email/Password.");
