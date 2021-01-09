@@ -14,15 +14,7 @@ function login() {
     setTimeout('ligin()', 1000);
 }
 function searchBar() {
-    var s = document.getElementsById("search").value;
-    s = s.toLowerCase();
-    if (s == "shoes") {
-
-        window.location = "shoe.html";
-    }
-    else {
-        alert("No Products Found!");
-    }
+    
 }
 function reg() {
     var pass1 = document.getElementById("pass1").value;
