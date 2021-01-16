@@ -45,3 +45,57 @@ body{
     border-radius: 1em;
     background-color: rgb(252, 247, 222); 
 }
+.shop-by-brand:hover{
+    transition: 0.2s ease-out;
+    transform: scale(1.1);
+}
+.nav-bar {
+    position: absolute;
+}
+
+.nav-bar-item {
+    color: white;
+}
+
+.nav-bar-item:hover {
+    color: rgb(255, 217, 0);
+}
+
+.drop {
+    width: 66em;
+}
+
+.drop>div {
+    display: inline-table;
+    margin-top: 0%;
+    padding-top: 0%;
+    width: 20em;
+    margin-left: 1em;
+}
+
+.drop>a {
+    margin-left: 2em;
+}
+
+.drop2 {
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    left: 50em;
+    width: 42.5em;
+}
+
+.drop2>div {
+    display: inline-table;
+    margin-top: 0%;
+    padding-top: 0%;
+    width: 20em;
+    margin-left: 1em;
+}
+
+.drop2>a {
+    margin-left: 2em;
+}
+#pas_d_match{
+    display: none;
+}
