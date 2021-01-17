@@ -98,3 +98,32 @@ function searchBar() {
 function f() {
     document.getElementById("fname").focus();
 }
+function showHdd() {
+    var hdd = document.getElementById('check1');
+
+    if (hdd.checked == true) {
+        document.getElementById('hddDrop').style.display = 'block';
+    }
+    else {
+        document.getElementById('hddDrop').style.display = 'none';
+    }
+}
+function showSSD() {
+    var ssd = document.getElementById('check2');
+    if (ssd.checked == true) {
+        document.getElementById('ssdDrop').style.display = 'block';
+    }
+    else {
+        document.getElementById('ssdDrop').style.display = 'none';
+    }
+}
+function dropdown(id) {
+    var div = document.getElementById(id);
+    if (div.style.display == 'none') {
+        div.style.display = 'block';
+    }
+    else {
+        div.style.display = 'none';
+    }
+
+}
